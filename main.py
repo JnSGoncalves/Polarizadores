@@ -26,6 +26,17 @@ while True:
         intensidade = float(input("Digite a intencidade: "))
         ang1 = float(input("Digite o primeiro ângulo: "))
         ang2 = float(input("Digite o segundo ângulo: "))
+
+        if(posInicial == "1"):
+            pass
+        elif(posInicial == "2"):
+            pass
+        elif(posInicial == "3"):
+            pass
+        else:
+            print("Entrada inválida.")
+            print()
+            continue
         print()
 
     elif(opcao == "2"):
@@ -35,6 +46,21 @@ while True:
         ang2 = float(input("Digite o segundo ângulo: "))
         ang3 = float(input("Digite o terceiro ângulo: "))
         print()
+
+        if(posInicial == "1"):
+            pass
+        elif(posInicial == "2"):
+            pass
+        elif(posInicial == "3"):
+            pass
+        elif(posInicial == "4"):
+            pass
+        else:
+            print("Entrada inválida.")
+            print()
+            continue
+        print()
+
 
     elif(opcao == "0"):
         print("Saindo...")
