@@ -28,11 +28,7 @@ while True:
         ang2 = float(input("Digite o segundo ângulo: "))
 
         if(posInicial == "1"):
-            pass
-        elif(posInicial == "2"):
-            pass
-        elif(posInicial == "3"):
-            pass
+            saida1, saida2 = doisPolarizadores(posInicial, intensidadeInicial, ang1, ang2)
         else:
             print("Entrada inválida.")
             print()
@@ -65,4 +61,3 @@ while True:
     elif(opcao == "0"):
         print("Saindo...")
         break
-
