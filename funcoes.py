@@ -32,7 +32,7 @@ def doisPolarizadores(posInicial, intensidade, ang1, ang2):
         return i2, i3 
     elif (posInicial == 1):
         i1 = intensidade * 2
-        i3 = intensidade * math.cos(math.radiasn(ang2 - ang1))**2
+        i3 = intensidade * math.cos(math.radians(ang2 - ang1))**2
         return i1, i3
     elif (posInicial == 2):
         i2 = intensidade / math.cos(math.radians(ang1 - ang2))**2
