@@ -1,3 +1,5 @@
+from funcoes import *
+
 print("""Autores:
 
 Jônatas da Silva Gonçalves.
