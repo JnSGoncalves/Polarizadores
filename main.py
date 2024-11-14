@@ -31,7 +31,7 @@ while True:
     print()
     
     if(opcao == "1"):
-        posInicial = int(input("Qual a posicão inicial? (I1, I2 ou I3 - Digite somento o número): "))
+        posInicial = int(input("Qual a posicão inicial? (I0, I1 ou I2 - Digite somento o número): "))
         intensidade = float(input("Digite a intensidade: "))
         ang1 = float(input("Digite o primeiro ângulo em graus: "))
         ang2 = float(input("Digite o segundo ângulo em graus: "))
@@ -44,48 +44,55 @@ while True:
             continue
         print()
 
-        if(posInicial == 1):
-            print("Intensidade no momento 2 (I2) = ", saida1)
-            print("Intensidade no momento 3 (I3) = ", saida2)
-        elif(posInicial == 2):
-            print("Intensidade no momento 1 (I1) = ", saida1)
-            print("Intensidade no momento 3 (I3) = ", saida2)
-        elif(posInicial == 3):
+        if(posInicial == 0):
+            print("Intensidade no momento 0 (I0) = ", intensidade)
             print("Intensidade no momento 1 (I1) = ", saida1)
             print("Intensidade no momento 2 (I2) = ", saida2)
+        elif(posInicial == 1):
+            print("Intensidade no momento 0 (I0) = ", saida1)
+            print("Intensidade no momento 1 (I1) = ", intensidade)
+            print("Intensidade no momento 3 (I2) = ", saida2)
+        elif(posInicial == 2):
+            print("Intensidade no momento 0 (I0) = ", saida1)
+            print("Intensidade no momento 1 (I1) = ", saida2)
+            print("Intensidade no momento 2 (I2) = ", intensidade)
         print()
 
     elif(opcao == "2"):
-        posInicial = int(input("Digite o valor da posicão inicial: "))
+        posInicial = int(input("Qual a posicão inicial? (I0, I1, I2 ou I3 - Digite somento o número): "))
         intensidade = float(input("Digite a intencidade: "))
         ang1 = float(input("Digite o primeiro ângulo: "))
         ang2 = float(input("Digite o segundo ângulo: "))
         ang3 = float(input("Digite o terceiro ângulo: "))
         print()
 
-        if(posInicial != 1 or posInicial != 2 or posInicial != 3):
-            saida1, saida2, saida3 = tresPolarizadores(posInicial, intensidade, ang1, ang2)
+        if(posInicial != 1 or posInicial != 2 or posInicial != 3 or posInicial != 4):
+            saida1, saida2, saida3 = tresPolarizadores(posInicial, intensidade, ang1, ang2, ang3)
         else:
             print("Entrada inválida.")
             print()
             continue
 
-        if(posInicial == 1):
-            print("Intensidade no momento 2 (I2) = ", saida1)
-            print("Intensidade no momento 3 (I3) = ", saida2)
-            print("Intensidade no momento 4 (I4) = ", saida3)
-        elif(posInicial == 2):
-            print("Intensidade no momento 1 (I1) = ", saida1)
-            print("Intensidade no momento 3 (I3) = ", saida2)
-            print("Intensidade no momento 4 (I4) = ", saida3)
-        elif(posInicial == 3):
-            print("Intensidade no momento 1 (I1) = ", saida1)
-            print("Intensidade no momento 2 (I2) = ", saida2)
-            print("Intensidade no momento 4 (I4) = ", saida3)
-        elif(posInicial == 4):
+        if(posInicial == 0):
+            print("Intensidade no momento 0 (I0) = ", intensidade)
             print("Intensidade no momento 1 (I1) = ", saida1)
             print("Intensidade no momento 2 (I2) = ", saida2)
             print("Intensidade no momento 3 (I3) = ", saida3)
+        elif(posInicial == 1):
+            print("Intensidade no momento 0 (I0) = ", saida1)
+            print("Intensidade no momento 1 (I1) = ", intensidade)
+            print("Intensidade no momento 2 (I2) = ", saida2)
+            print("Intensidade no momento 3 (I3) = ", saida3)
+        elif(posInicial == 2):
+            print("Intensidade no momento 0 (I0) = ", saida1)
+            print("Intensidade no momento 1 (I1) = ", saida2)
+            print("Intensidade no momento 2 (I2) = ", intensidade)
+            print("Intensidade no momento 3 (I3) = ", saida3)
+        elif(posInicial == 3):
+            print("Intensidade no momento 0 (I0) = ", saida1)
+            print("Intensidade no momento 1 (I1) = ", saida2)
+            print("Intensidade no momento 2 (I2) = ", saida3)
+            print("Intensidade no momento 3 (I3) = ", intensidade)
         print()
 
 
