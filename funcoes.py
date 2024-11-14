@@ -38,4 +38,3 @@ def doisPolarizadores(posInicial, intensidade, ang1, ang2):
         i2 = intensidade / cos(radians(ang1 - ang2))**2
         i1 = i2 * 2
         return i1, i2
-
