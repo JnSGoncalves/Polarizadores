@@ -149,3 +149,7 @@ while True:
         print("Saindo...")
         break
 
+    else:
+        print("Opção inválida!")
+        print()
+
