@@ -60,9 +60,9 @@ while True:
 
         if(posInicial != 1 or posInicial != 2 or posInicial != 3):
             saida1, saida2 = doisPolarizadores(posInicial, intensidade, ang1, ang2)
-            saida1Cientifica = f"{saida1:.4e}"  
-            saida2Cientifica = f"{saida2:.4e}"  
-            intensidadeCientifica = f"{intensidade:.4e}"
+            saida1Cientifica = f"{saida1:.3e}"  
+            saida2Cientifica = f"{saida2:.3e}"  
+            intensidadeCientifica = f"{intensidade:.3e}"
         else:
             print("Entrada inválida.")
             print()
@@ -71,8 +71,8 @@ while True:
 
         if(posInicial == 0):
             saida1Po, saida2Po = doisPolarizadoresPolarizados(intensidade, ang1, ang2)
-            saida1PoCientifica = f"{saida1Po:.4e}"
-            saida2PoCientifica = f"{saida2Po:.4e}"
+            saida1PoCientifica = f"{saida1Po:.3e}"
+            saida2PoCientifica = f"{saida2Po:.3e}"
             print("Para luz não polarizada:")
             print("Intensidade no momento 0 (I0) = ", intensidadeCientifica + " [w/cm²]")
             print("Intensidade no momento 1 (I1) = ", saida1Cientifica + " [w/cm²]")
@@ -102,10 +102,10 @@ while True:
 
         if(posInicial != 1 or posInicial != 2 or posInicial != 3 or posInicial != 4):
             saida1, saida2, saida3 = tresPolarizadores(posInicial, intensidade, ang1, ang2, ang3)
-            saida1Cientifica = f"{saida1:.4e}"
-            saida2Cientifica = f"{saida2:.4e}"
-            saida3Cientifica = f"{saida3:.4e}"
-            intensidadeCientifica = f"{intensidade:.4e}"
+            saida1Cientifica = f"{saida1:.3e}"
+            saida2Cientifica = f"{saida2:.3e}"
+            saida3Cientifica = f"{saida3:.3e}"
+            intensidadeCientifica = f"{intensidade:.3e}"
         else:
             print("Entrada inválida.")
             print()
@@ -114,9 +114,9 @@ while True:
         if(posInicial == 0):
             saida1Po, saida2Po, saida3Po = tresPolarizadoresPolarizados(intensidade,
                                             ang1, ang2, ang3)
-            saida1PoCientifica = f"{saida1Po:.4e}"
-            saida2PoCientifica = f"{saida2Po:.4e}"
-            saida3PoCientifica = f"{saida3Po:.4e}"
+            saida1PoCientifica = f"{saida1Po:.3e}"
+            saida2PoCientifica = f"{saida2Po:.3e}"
+            saida3PoCientifica = f"{saida3Po:.3e}"
             print("Para luz não polarizada:")
             print("Intensidade no momento 0 (I0) = ", intensidadeCientifica + " [w/cm²]")
             print("Intensidade no momento 1 (I1) = ", saida1Cientifica + " [w/cm²]")
